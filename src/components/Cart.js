@@ -1,6 +1,6 @@
 import React from 'react'
 import Total from './totalCost'
-import inCart from './inCart'
+import InCart from './inCart'
 
 
 export default function Cart (props) {
@@ -13,7 +13,7 @@ export default function Cart (props) {
     return (
         <div>
             <h2>Your cart</h2>
-            <inCart selected={props.selected} currency={props.currency} />
+            <InCart selected={props.selected} currency={props.currency} />
             <Total currency={props.currency} total={total} />
         </div>
     )
